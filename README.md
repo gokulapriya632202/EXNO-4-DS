@@ -206,14 +206,19 @@ tips.head()
 ```
 ![Screenshot 2024-04-16 161616](https://github.com/gokulapriya632202/EXNO-4-DS/assets/119560302/55288e80-e6d6-4d55-bb50-4012850e493a)
 
+```
+contingency_table=pd.crosstab(tips['sex'],tips['time'])
+print(contingency_table)
+```
+![Screenshot 2024-04-16 161713](https://github.com/gokulapriya632202/EXNO-4-DS/assets/119560302/273c0746-e248-4ef1-bc2e-380c31d8ebeb)
 
-
-
-
-
-
-
+```
+chi2, p, _, _=chi2_contingency(contingency_table)
+print(f"Chi-Square Statistic: {chi2}")
+print(f"P-value: {p}")
+```
+![Screenshot 2024-04-16 161719](https://github.com/gokulapriya632202/EXNO-4-DS/assets/119560302/ee722c52-6791-4402-a61f-350f81d66b0a)
 
 
 # RESULT:
-       # INCLUDE YOUR RESULT HERE
+     Thus to read the given data and perform Feature Scaling and Feature Selection process was performed successfully.
